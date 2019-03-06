@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Model\Review;
 class Product extends Model
 {
-    return $this->hasMany(Review::class);
+   public function Reviews(){
+     return $this->hasMany(Review::class);
+   }
 }
